@@ -1,0 +1,1452 @@
+[
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "30"
+  ],
+  "expected": "Keeping 30 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 6 full copies and 25 incrementals. With 500 GB of data and each incremental 5 percent of it, that is up to 3625 GB, 7.25 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "1",
+   "30"
+  ],
+  "expected": "Keeping 30 days of restore points with a full copy every day stores 30 full copies and no incrementals. With 500 GB of data that is 15000 GB, 30 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "1",
+   "0",
+   "1",
+   "1"
+  ],
+  "expected": "Keeping 1 day of restore points with a full copy every day stores 1 full copy and no incrementals. With 1 GB of data that is 1 GB, 1 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "1",
+   "0",
+   "2",
+   "1"
+  ],
+  "expected": "Keeping 1 day of restore points with a full copy every 2 days and an incremental on the other days stores up to 1 full copy and 1 incremental. With 1 GB of data and each incremental 0 percent of it, that is up to 1 GB, 1 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "1",
+   "100",
+   "7",
+   "7"
+  ],
+  "expected": "Keeping 7 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 2 full copies and 6 incrementals. With 1 GB of data and each incremental 100 percent of it, that is up to 8 GB, 8 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "1",
+   "100",
+   "7",
+   "8"
+  ],
+  "expected": "Keeping 8 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 2 full copies and 7 incrementals. With 1 GB of data and each incremental 100 percent of it, that is up to 9 GB, 9 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100",
+   "10",
+   "7",
+   "6"
+  ],
+  "expected": "Keeping 6 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 2 full copies and 5 incrementals. With 100 GB of data and each incremental 10 percent of it, that is up to 250 GB, 2.5 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100",
+   "10",
+   "7",
+   "14"
+  ],
+  "expected": "Keeping 14 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 3 full copies and 12 incrementals. With 100 GB of data and each incremental 10 percent of it, that is up to 420 GB, 4.2 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100",
+   "10",
+   "7",
+   "15"
+  ],
+  "expected": "Keeping 15 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 3 full copies and 13 incrementals. With 100 GB of data and each incremental 10 percent of it, that is up to 430 GB, 4.3 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100",
+   "10",
+   "30",
+   "10"
+  ],
+  "expected": "Keeping 10 days of restore points with a full copy every 30 days and an incremental on the other days stores up to 2 full copies and 9 incrementals. With 100 GB of data and each incremental 10 percent of it, that is up to 290 GB, 2.9 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100000",
+   "100",
+   "60",
+   "400"
+  ],
+  "expected": "Keeping 400 days of restore points with a full copy every 60 days and an incremental on the other days stores up to 8 full copies and 393 incrementals. With 100000 GB of data and each incremental 100 percent of it, that is up to 40100000 GB, 401 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100000",
+   "0",
+   "60",
+   "400"
+  ],
+  "expected": "Keeping 400 days of restore points with a full copy every 60 days and an incremental on the other days stores up to 8 full copies and 393 incrementals. With 100000 GB of data and each incremental 0 percent of it, that is up to 800000 GB, 8 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "250",
+   "3",
+   "7",
+   "28"
+  ],
+  "expected": "Keeping 28 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 5 full copies and 24 incrementals. With 250 GB of data and each incremental 3 percent of it, that is up to 1430 GB, 5.72 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "999",
+   "7",
+   "3",
+   "10"
+  ],
+  "expected": "Keeping 10 days of restore points with a full copy every 3 days and an incremental on the other days stores up to 4 full copies and 7 incrementals. With 999 GB of data and each incremental 7 percent of it, that is up to 4485.51 GB, 4.49 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "10",
+   "1",
+   "2",
+   "2"
+  ],
+  "expected": "Keeping 2 days of restore points with a full copy every 2 days and an incremental on the other days stores up to 2 full copies and 1 incremental. With 10 GB of data and each incremental 1 percent of it, that is up to 20.1 GB, 2.01 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "10",
+   "1",
+   "2",
+   "3"
+  ],
+  "expected": "Keeping 3 days of restore points with a full copy every 2 days and an incremental on the other days stores up to 2 full copies and 2 incrementals. With 10 GB of data and each incremental 1 percent of it, that is up to 20.2 GB, 2.02 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "10",
+   "50",
+   "5",
+   "5"
+  ],
+  "expected": "Keeping 5 days of restore points with a full copy every 5 days and an incremental on the other days stores up to 2 full copies and 4 incrementals. With 10 GB of data and each incremental 50 percent of it, that is up to 40 GB, 4 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "10",
+   "50",
+   "5",
+   "1"
+  ],
+  "expected": "Keeping 1 day of restore points with a full copy every 5 days and an incremental on the other days stores up to 1 full copy and 1 incremental. With 10 GB of data and each incremental 50 percent of it, that is up to 15 GB, 1.5 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "7",
+   "33",
+   "4",
+   "9"
+  ],
+  "expected": "Keeping 9 days of restore points with a full copy every 4 days and an incremental on the other days stores up to 3 full copies and 7 incrementals. With 7 GB of data and each incremental 33 percent of it, that is up to 37.17 GB, 5.31 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "0",
+   "5",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the data size must be a whole number of GB from 1 to 100000"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "100001",
+   "5",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the data size must be a whole number of GB from 1 to 100000"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "x",
+   "5",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the data size must be a whole number of GB from 1 to 100000"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "101",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the incremental size must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "-1",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the incremental size must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "0",
+   "30"
+  ],
+  "expected": "ERR:the days between full copies must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "61",
+   "30"
+  ],
+  "expected": "ERR:the days between full copies must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "0"
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "401"
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   ""
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   " 500 ",
+   " 5 ",
+   " 7 ",
+   " 30 "
+  ],
+  "expected": "Keeping 30 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 6 full copies and 25 incrementals. With 500 GB of data and each incremental 5 percent of it, that is up to 3625 GB, 7.25 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "5.5",
+   "5",
+   "7",
+   "30"
+  ],
+  "expected": "ERR:the data size must be a whole number of GB from 1 to 100000"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "200"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 6 incrementals, which is 650 GB to read. At 200 MB a second (1 GB counted as 1000 MB) that takes 3250 seconds (54 minutes and 10 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "1",
+   "0",
+   "1",
+   "100000"
+  ],
+  "expected": "Every point is a full copy, so a restore reads the full copy: 1 GB to read. At 100000 MB a second (1 GB counted as 1000 MB) that takes 1 second, rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "1",
+   "0",
+   "1",
+   "1"
+  ],
+  "expected": "Every point is a full copy, so a restore reads the full copy: 1 GB to read. At 1 MB a second (1 GB counted as 1000 MB) that takes 1000 seconds (16 minutes and 40 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100000",
+   "100",
+   "60",
+   "1"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 59 incrementals, which is 6000000 GB to read. At 1 MB a second (1 GB counted as 1000 MB) that takes 6000000000 seconds (69444 days, 10 hours and 40 minutes), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100000",
+   "100",
+   "60",
+   "100000"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 59 incrementals, which is 6000000 GB to read. At 100000 MB a second (1 GB counted as 1000 MB) that takes 60000 seconds (16 hours and 40 minutes), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "10",
+   "2",
+   "7"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 1 incremental, which is 110 GB to read. At 7 MB a second (1 GB counted as 1000 MB) that takes 15715 seconds (4 hours, 21 minutes and 55 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "333",
+   "7",
+   "5",
+   "13"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 4 incrementals, which is 426.24 GB to read. At 13 MB a second (1 GB counted as 1000 MB) that takes 32788 seconds (9 hours, 6 minutes and 28 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "1",
+   "1",
+   "3",
+   "3"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 2 incrementals, which is 1.02 GB to read. At 3 MB a second (1 GB counted as 1000 MB) that takes 340 seconds (5 minutes and 40 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "10",
+   "50",
+   "7",
+   "1000"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 6 incrementals, which is 40 GB to read. At 1000 MB a second (1 GB counted as 1000 MB) that takes 40 seconds, rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "0",
+   "5",
+   "7",
+   "200"
+  ],
+  "expected": "ERR:the data size must be a whole number of GB from 1 to 100000"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "101",
+   "7",
+   "200"
+  ],
+  "expected": "ERR:the incremental size must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "0",
+   "200"
+  ],
+  "expected": "ERR:the days between full copies must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "0"
+  ],
+  "expected": "ERR:the restore speed must be a whole number of MB a second from 1 to 100000"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "100001"
+  ],
+  "expected": "ERR:the restore speed must be a whole number of MB a second from 1 to 100000"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "7",
+   "x"
+  ],
+  "expected": "ERR:the restore speed must be a whole number of MB a second from 1 to 100000"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "500",
+   "5",
+   "61",
+   "200"
+  ],
+  "expected": "ERR:the days between full copies must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   " 40 ",
+   " 4 ",
+   " 4 ",
+   " 40 "
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 3 incrementals, which is 44.8 GB to read. At 40 MB a second (1 GB counted as 1000 MB) that takes 1120 seconds (18 minutes and 40 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "10"
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began 10 days ago can be undone from points up to 20 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "0"
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began today can be undone from points up to 30 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "29"
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began 29 days ago can be undone from points up to 1 day before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "30"
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began 30 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "31"
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began 31 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "1",
+   "0"
+  ],
+  "expected": "Restore points reach back 1 day. A problem that began today can be undone from points up to 1 day before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "Restore points reach back 1 day. A problem that began 1 day ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "400",
+   "399"
+  ],
+  "expected": "Restore points reach back 400 days. A problem that began 399 days ago can be undone from points up to 1 day before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "400",
+   "400"
+  ],
+  "expected": "Restore points reach back 400 days. A problem that began 400 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "400",
+   "0"
+  ],
+  "expected": "Restore points reach back 400 days. A problem that began today can be undone from points up to 400 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "7",
+   "1"
+  ],
+  "expected": "Restore points reach back 7 days. A problem that began 1 day ago can be undone from points up to 6 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "2",
+   "1"
+  ],
+  "expected": "Restore points reach back 2 days. A problem that began 1 day ago can be undone from points up to 1 day before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "0",
+   "3"
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "401",
+   "3"
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "401"
+  ],
+  "expected": "ERR:the days since it began must be a whole number from 0 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   "-1"
+  ],
+  "expected": "ERR:the days since it began must be a whole number from 0 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "x",
+   "3"
+  ],
+  "expected": "ERR:the days kept must be a whole number from 1 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "30",
+   ""
+  ],
+  "expected": "ERR:the days since it began must be a whole number from 0 to 400"
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   " 30 ",
+   " 10 "
+  ],
+  "expected": "Restore points reach back 30 days. A problem that began 10 days ago can be undone from points up to 20 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "5",
+   "4"
+  ],
+  "expected": "Restore points reach back 5 days. A problem that began 4 days ago can be undone from points up to 1 day before it began."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "99040",
+   "13",
+   "9",
+   "16"
+  ],
+  "expected": "Keeping 16 days of restore points with a full copy every 9 days and an incremental on the other days stores up to 3 full copies and 14 incrementals. With 99040 GB of data and each incremental 13 percent of it, that is up to 477372.8 GB, 4.82 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "35732",
+   "25",
+   "46",
+   "149"
+  ],
+  "expected": "Keeping 149 days of restore points with a full copy every 46 days and an incremental on the other days stores up to 5 full copies and 145 incrementals. With 35732 GB of data and each incremental 25 percent of it, that is up to 1473945 GB, 41.25 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "61332",
+   "73",
+   "27",
+   "40"
+  ],
+  "expected": "Keeping 40 days of restore points with a full copy every 27 days and an incremental on the other days stores up to 3 full copies and 38 incrementals. With 61332 GB of data and each incremental 73 percent of it, that is up to 1885345.68 GB, 30.74 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "34991",
+   "31",
+   "48",
+   "292"
+  ],
+  "expected": "Keeping 292 days of restore points with a full copy every 48 days and an incremental on the other days stores up to 8 full copies and 285 incrementals. With 34991 GB of data and each incremental 31 percent of it, that is up to 3371382.85 GB, 96.35 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "23441",
+   "61",
+   "10",
+   "376"
+  ],
+  "expected": "Keeping 376 days of restore points with a full copy every 10 days and an incremental on the other days stores up to 39 full copies and 338 incrementals. With 23441 GB of data and each incremental 61 percent of it, that is up to 5747264.38 GB, 245.18 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "87067",
+   "10",
+   "28",
+   "381"
+  ],
+  "expected": "Keeping 381 days of restore points with a full copy every 28 days and an incremental on the other days stores up to 15 full copies and 367 incrementals. With 87067 GB of data and each incremental 10 percent of it, that is up to 4501363.9 GB, 51.7 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "49321",
+   "54",
+   "1",
+   "368"
+  ],
+  "expected": "Keeping 368 days of restore points with a full copy every day stores 368 full copies and no incrementals. With 49321 GB of data that is 18150128 GB, 368 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "10526",
+   "72",
+   "37",
+   "329"
+  ],
+  "expected": "Keeping 329 days of restore points with a full copy every 37 days and an incremental on the other days stores up to 10 full copies and 320 incrementals. With 10526 GB of data and each incremental 72 percent of it, that is up to 2530450.4 GB, 240.4 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "31069",
+   "27",
+   "6",
+   "186"
+  ],
+  "expected": "Keeping 186 days of restore points with a full copy every 6 days and an incremental on the other days stores up to 32 full copies and 155 incrementals. With 31069 GB of data and each incremental 27 percent of it, that is up to 2294445.65 GB, 73.85 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "81745",
+   "57",
+   "57",
+   "59"
+  ],
+  "expected": "Keeping 59 days of restore points with a full copy every 57 days and an incremental on the other days stores up to 3 full copies and 57 incrementals. With 81745 GB of data and each incremental 57 percent of it, that is up to 2901130.05 GB, 35.49 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "58833",
+   "29",
+   "35",
+   "191"
+  ],
+  "expected": "Keeping 191 days of restore points with a full copy every 35 days and an incremental on the other days stores up to 7 full copies and 185 incrementals. With 58833 GB of data and each incremental 29 percent of it, that is up to 3568221.45 GB, 60.65 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "80571",
+   "7",
+   "60",
+   "314"
+  ],
+  "expected": "Keeping 314 days of restore points with a full copy every 60 days and an incremental on the other days stores up to 7 full copies and 308 incrementals. With 80571 GB of data and each incremental 7 percent of it, that is up to 2301107.76 GB, 28.56 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "12971",
+   "76",
+   "30",
+   "251"
+  ],
+  "expected": "Keeping 251 days of restore points with a full copy every 30 days and an incremental on the other days stores up to 10 full copies and 242 incrementals. With 12971 GB of data and each incremental 76 percent of it, that is up to 2515336.32 GB, 193.92 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "15881",
+   "94",
+   "50",
+   "395"
+  ],
+  "expected": "Keeping 395 days of restore points with a full copy every 50 days and an incremental on the other days stores up to 9 full copies and 387 incrementals. With 15881 GB of data and each incremental 94 percent of it, that is up to 5920119.18 GB, 372.78 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "97278",
+   "94",
+   "42",
+   "86"
+  ],
+  "expected": "Keeping 86 days of restore points with a full copy every 42 days and an incremental on the other days stores up to 4 full copies and 83 incrementals. With 97278 GB of data and each incremental 94 percent of it, that is up to 7978741.56 GB, 82.02 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "68348",
+   "59",
+   "21",
+   "291"
+  ],
+  "expected": "Keeping 291 days of restore points with a full copy every 21 days and an incremental on the other days stores up to 15 full copies and 277 incrementals. With 68348 GB of data and each incremental 59 percent of it, that is up to 12195333.64 GB, 178.43 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "98472",
+   "41",
+   "48",
+   "219"
+  ],
+  "expected": "Keeping 219 days of restore points with a full copy every 48 days and an incremental on the other days stores up to 6 full copies and 214 incrementals. With 98472 GB of data and each incremental 41 percent of it, that is up to 9230765.28 GB, 93.74 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "23329",
+   "1",
+   "42",
+   "275"
+  ],
+  "expected": "Keeping 275 days of restore points with a full copy every 42 days and an incremental on the other days stores up to 8 full copies and 268 incrementals. With 23329 GB of data and each incremental 1 percent of it, that is up to 249153.72 GB, 10.68 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "11876",
+   "86",
+   "29",
+   "154"
+  ],
+  "expected": "Keeping 154 days of restore points with a full copy every 29 days and an incremental on the other days stores up to 7 full copies and 148 incrementals. With 11876 GB of data and each incremental 86 percent of it, that is up to 1594709.28 GB, 134.28 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "85906",
+   "47",
+   "23",
+   "306"
+  ],
+  "expected": "Keeping 306 days of restore points with a full copy every 23 days and an incremental on the other days stores up to 15 full copies and 292 incrementals. With 85906 GB of data and each incremental 47 percent of it, that is up to 13078329.44 GB, 152.24 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "39773",
+   "94",
+   "52",
+   "136"
+  ],
+  "expected": "Keeping 136 days of restore points with a full copy every 52 days and an incremental on the other days stores up to 4 full copies and 133 incrementals. With 39773 GB of data and each incremental 94 percent of it, that is up to 5131512.46 GB, 129.02 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "9534",
+   "49",
+   "16",
+   "316"
+  ],
+  "expected": "Keeping 316 days of restore points with a full copy every 16 days and an incremental on the other days stores up to 21 full copies and 296 incrementals. With 9534 GB of data and each incremental 49 percent of it, that is up to 1583025.36 GB, 166.04 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "15453",
+   "55",
+   "49",
+   "90"
+  ],
+  "expected": "Keeping 90 days of restore points with a full copy every 49 days and an incremental on the other days stores up to 3 full copies and 88 incrementals. With 15453 GB of data and each incremental 55 percent of it, that is up to 794284.2 GB, 51.4 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "93226",
+   "18",
+   "29",
+   "2"
+  ],
+  "expected": "Keeping 2 days of restore points with a full copy every 29 days and an incremental on the other days stores up to 2 full copies and 1 incremental. With 93226 GB of data and each incremental 18 percent of it, that is up to 203232.68 GB, 2.18 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "28464",
+   "91",
+   "31",
+   "216"
+  ],
+  "expected": "Keeping 216 days of restore points with a full copy every 31 days and an incremental on the other days stores up to 8 full copies and 209 incrementals. With 28464 GB of data and each incremental 91 percent of it, that is up to 5641280.16 GB, 198.19 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "67905",
+   "70",
+   "31",
+   "397"
+  ],
+  "expected": "Keeping 397 days of restore points with a full copy every 31 days and an incremental on the other days stores up to 14 full copies and 384 incrementals. With 67905 GB of data and each incremental 70 percent of it, that is up to 19203534 GB, 282.8 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "92282",
+   "18",
+   "44",
+   "340"
+  ],
+  "expected": "Keeping 340 days of restore points with a full copy every 44 days and an incremental on the other days stores up to 9 full copies and 332 incrementals. With 92282 GB of data and each incremental 18 percent of it, that is up to 6345310.32 GB, 68.76 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "89612",
+   "58",
+   "48",
+   "22"
+  ],
+  "expected": "Keeping 22 days of restore points with a full copy every 48 days and an incremental on the other days stores up to 2 full copies and 21 incrementals. With 89612 GB of data and each incremental 58 percent of it, that is up to 1270698.16 GB, 14.18 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "19774",
+   "100",
+   "2",
+   "215"
+  ],
+  "expected": "Keeping 215 days of restore points with a full copy every 2 days and an incremental on the other days stores up to 108 full copies and 108 incrementals. With 19774 GB of data and each incremental 100 percent of it, that is up to 4271184 GB, 216 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "99971",
+   "93",
+   "49",
+   "269"
+  ],
+  "expected": "Keeping 269 days of restore points with a full copy every 49 days and an incremental on the other days stores up to 7 full copies and 263 incrementals. With 99971 GB of data and each incremental 93 percent of it, that is up to 25151703.89 GB, 251.59 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "55296",
+   "28",
+   "59",
+   "119"
+  ],
+  "expected": "Keeping 119 days of restore points with a full copy every 59 days and an incremental on the other days stores up to 3 full copies and 117 incrementals. With 55296 GB of data and each incremental 28 percent of it, that is up to 1977384.96 GB, 35.76 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "3848",
+   "82",
+   "53",
+   "112"
+  ],
+  "expected": "Keeping 112 days of restore points with a full copy every 53 days and an incremental on the other days stores up to 4 full copies and 109 incrementals. With 3848 GB of data and each incremental 82 percent of it, that is up to 359326.24 GB, 93.38 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "1921",
+   "97",
+   "58",
+   "196"
+  ],
+  "expected": "Keeping 196 days of restore points with a full copy every 58 days and an incremental on the other days stores up to 5 full copies and 192 incrementals. With 1921 GB of data and each incremental 97 percent of it, that is up to 367372.04 GB, 191.24 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "95177",
+   "71",
+   "41",
+   "358"
+  ],
+  "expected": "Keeping 358 days of restore points with a full copy every 41 days and an incremental on the other days stores up to 10 full copies and 349 incrementals. With 95177 GB of data and each incremental 71 percent of it, that is up to 24535678.83 GB, 257.79 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "76734",
+   "94",
+   "13",
+   "304"
+  ],
+  "expected": "Keeping 304 days of restore points with a full copy every 13 days and an incremental on the other days stores up to 25 full copies and 280 incrementals. With 76734 GB of data and each incremental 94 percent of it, that is up to 22114738.8 GB, 288.2 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "4739",
+   "69",
+   "47",
+   "127"
+  ],
+  "expected": "Keeping 127 days of restore points with a full copy every 47 days and an incremental on the other days stores up to 4 full copies and 124 incrementals. With 4739 GB of data and each incremental 69 percent of it, that is up to 424424.84 GB, 89.56 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "9487",
+   "40",
+   "7",
+   "38"
+  ],
+  "expected": "Keeping 38 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 7 full copies and 32 incrementals. With 9487 GB of data and each incremental 40 percent of it, that is up to 187842.6 GB, 19.8 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "77573",
+   "0",
+   "14",
+   "173"
+  ],
+  "expected": "Keeping 173 days of restore points with a full copy every 14 days and an incremental on the other days stores up to 14 full copies and 160 incrementals. With 77573 GB of data and each incremental 0 percent of it, that is up to 1086022 GB, 14 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "6076",
+   "13",
+   "23",
+   "49"
+  ],
+  "expected": "Keeping 49 days of restore points with a full copy every 23 days and an incremental on the other days stores up to 4 full copies and 46 incrementals. With 6076 GB of data and each incremental 13 percent of it, that is up to 60638.48 GB, 9.98 times the data."
+ },
+ {
+  "fn": "spaceTruth",
+  "args": [
+   "30580",
+   "24",
+   "7",
+   "231"
+  ],
+  "expected": "Keeping 231 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 34 full copies and 198 incrementals. With 30580 GB of data and each incremental 24 percent of it, that is up to 2492881.6 GB, 81.52 times the data."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "80867",
+   "13",
+   "53",
+   "59676"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 52 incrementals, which is 627527.92 GB to read. At 59676 MB a second (1 GB counted as 1000 MB) that takes 10516 seconds (2 hours, 55 minutes and 16 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "91011",
+   "92",
+   "59",
+   "9630"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 58 incrementals, which is 4947357.96 GB to read. At 9630 MB a second (1 GB counted as 1000 MB) that takes 513745 seconds (5 days, 22 hours, 42 minutes and 25 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "64879",
+   "38",
+   "22",
+   "29670"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 21 incrementals, which is 582613.42 GB to read. At 29670 MB a second (1 GB counted as 1000 MB) that takes 19637 seconds (5 hours, 27 minutes and 17 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "2221",
+   "22",
+   "35",
+   "35649"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 34 incrementals, which is 18834.08 GB to read. At 35649 MB a second (1 GB counted as 1000 MB) that takes 529 seconds (8 minutes and 49 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "70689",
+   "20",
+   "35",
+   "66622"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 34 incrementals, which is 551374.2 GB to read. At 66622 MB a second (1 GB counted as 1000 MB) that takes 8277 seconds (2 hours, 17 minutes and 57 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "51579",
+   "52",
+   "3",
+   "53907"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 2 incrementals, which is 105221.16 GB to read. At 53907 MB a second (1 GB counted as 1000 MB) that takes 1952 seconds (32 minutes and 32 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "3518",
+   "74",
+   "55",
+   "87109"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 54 incrementals, which is 144097.28 GB to read. At 87109 MB a second (1 GB counted as 1000 MB) that takes 1655 seconds (27 minutes and 35 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "36176",
+   "11",
+   "15",
+   "58335"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 14 incrementals, which is 91887.04 GB to read. At 58335 MB a second (1 GB counted as 1000 MB) that takes 1576 seconds (26 minutes and 16 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "44230",
+   "10",
+   "21",
+   "91009"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 20 incrementals, which is 132690 GB to read. At 91009 MB a second (1 GB counted as 1000 MB) that takes 1458 seconds (24 minutes and 18 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "43124",
+   "73",
+   "1",
+   "916"
+  ],
+  "expected": "Every point is a full copy, so a restore reads the full copy: 43124 GB to read. At 916 MB a second (1 GB counted as 1000 MB) that takes 47079 seconds (13 hours, 4 minutes and 39 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "21156",
+   "3",
+   "60",
+   "50287"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 59 incrementals, which is 58602.12 GB to read. At 50287 MB a second (1 GB counted as 1000 MB) that takes 1166 seconds (19 minutes and 26 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "24759",
+   "87",
+   "2",
+   "76997"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 1 incremental, which is 46299.33 GB to read. At 76997 MB a second (1 GB counted as 1000 MB) that takes 602 seconds (10 minutes and 2 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "92027",
+   "67",
+   "8",
+   "7208"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 7 incrementals, which is 523633.63 GB to read. At 7208 MB a second (1 GB counted as 1000 MB) that takes 72647 seconds (20 hours, 10 minutes and 47 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "89576",
+   "59",
+   "52",
+   "10540"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 51 incrementals, which is 2784917.84 GB to read. At 10540 MB a second (1 GB counted as 1000 MB) that takes 264224 seconds (3 days, 1 hour, 23 minutes and 44 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "34135",
+   "27",
+   "48",
+   "24618"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 47 incrementals, which is 467308.15 GB to read. At 24618 MB a second (1 GB counted as 1000 MB) that takes 18983 seconds (5 hours, 16 minutes and 23 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "72198",
+   "16",
+   "15",
+   "13125"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 14 incrementals, which is 233921.52 GB to read. At 13125 MB a second (1 GB counted as 1000 MB) that takes 17823 seconds (4 hours, 57 minutes and 3 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "50297",
+   "72",
+   "47",
+   "41489"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 46 incrementals, which is 1716133.64 GB to read. At 41489 MB a second (1 GB counted as 1000 MB) that takes 41364 seconds (11 hours, 29 minutes and 24 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "99907",
+   "52",
+   "46",
+   "31133"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 45 incrementals, which is 2437730.8 GB to read. At 31133 MB a second (1 GB counted as 1000 MB) that takes 78301 seconds (21 hours, 45 minutes and 1 second), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "25326",
+   "92",
+   "46",
+   "85482"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 45 incrementals, which is 1073822.4 GB to read. At 85482 MB a second (1 GB counted as 1000 MB) that takes 12562 seconds (3 hours, 29 minutes and 22 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "31232",
+   "30",
+   "10",
+   "27250"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 9 incrementals, which is 115558.4 GB to read. At 27250 MB a second (1 GB counted as 1000 MB) that takes 4241 seconds (1 hour, 10 minutes and 41 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "72865",
+   "91",
+   "8",
+   "87748"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 7 incrementals, which is 537015.05 GB to read. At 87748 MB a second (1 GB counted as 1000 MB) that takes 6120 seconds (1 hour and 42 minutes), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "22191",
+   "11",
+   "58",
+   "79453"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 57 incrementals, which is 161328.57 GB to read. At 79453 MB a second (1 GB counted as 1000 MB) that takes 2031 seconds (33 minutes and 51 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "99166",
+   "88",
+   "38",
+   "35900"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 37 incrementals, which is 3328010.96 GB to read. At 35900 MB a second (1 GB counted as 1000 MB) that takes 92703 seconds (1 day, 1 hour, 45 minutes and 3 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "75701",
+   "91",
+   "58",
+   "78988"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 57 incrementals, which is 4002311.87 GB to read. At 78988 MB a second (1 GB counted as 1000 MB) that takes 50670 seconds (14 hours, 4 minutes and 30 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "32678",
+   "66",
+   "44",
+   "88299"
+  ],
+  "expected": "In the worst case a restore needs the last full copy and 43 incrementals, which is 960079.64 GB to read. At 88299 MB a second (1 GB counted as 1000 MB) that takes 10874 seconds (3 hours, 1 minute and 14 seconds), rounded up to a whole second."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "150",
+   "351"
+  ],
+  "expected": "Restore points reach back 150 days. A problem that began 351 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "192",
+   "297"
+  ],
+  "expected": "Restore points reach back 192 days. A problem that began 297 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "194",
+   "293"
+  ],
+  "expected": "Restore points reach back 194 days. A problem that began 293 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "55",
+   "185"
+  ],
+  "expected": "Restore points reach back 55 days. A problem that began 185 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "205",
+   "398"
+  ],
+  "expected": "Restore points reach back 205 days. A problem that began 398 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "132",
+   "112"
+  ],
+  "expected": "Restore points reach back 132 days. A problem that began 112 days ago can be undone from points up to 20 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "140",
+   "367"
+  ],
+  "expected": "Restore points reach back 140 days. A problem that began 367 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "82",
+   "214"
+  ],
+  "expected": "Restore points reach back 82 days. A problem that began 214 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "282",
+   "71"
+  ],
+  "expected": "Restore points reach back 282 days. A problem that began 71 days ago can be undone from points up to 211 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "55",
+   "289"
+  ],
+  "expected": "Restore points reach back 55 days. A problem that began 289 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "22",
+   "216"
+  ],
+  "expected": "Restore points reach back 22 days. A problem that began 216 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "202",
+   "79"
+  ],
+  "expected": "Restore points reach back 202 days. A problem that began 79 days ago can be undone from points up to 123 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "348",
+   "24"
+  ],
+  "expected": "Restore points reach back 348 days. A problem that began 24 days ago can be undone from points up to 324 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "251",
+   "247"
+  ],
+  "expected": "Restore points reach back 251 days. A problem that began 247 days ago can be undone from points up to 4 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "83",
+   "280"
+  ],
+  "expected": "Restore points reach back 83 days. A problem that began 280 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "181",
+   "133"
+  ],
+  "expected": "Restore points reach back 181 days. A problem that began 133 days ago can be undone from points up to 48 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "275",
+   "123"
+  ],
+  "expected": "Restore points reach back 275 days. A problem that began 123 days ago can be undone from points up to 152 days before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "309",
+   "360"
+  ],
+  "expected": "Restore points reach back 309 days. A problem that began 360 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "6",
+   "211"
+  ],
+  "expected": "Restore points reach back 6 days. A problem that began 211 days ago is older than every restore point, so no point reaches back to before it began."
+ },
+ {
+  "fn": "reachTruth",
+  "args": [
+   "139",
+   "205"
+  ],
+  "expected": "Restore points reach back 139 days. A problem that began 205 days ago is older than every restore point, so no point reaches back to before it began."
+ }
+]
