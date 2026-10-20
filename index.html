@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backup Math - backup retention and restore arithmetic</title>
+<style>
+  :root { --accent:#2f6b3a; --ink:#12281a; --paper:#f3faf4; --soft:#dcefdf; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#5a8a66; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Backup Math</h1>
+  <p class="lede">Keeping 30 days of restore points on 500 GB with a full copy every 7 days stores up to 3625 GB, which is 7.25 times the data.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Backup Math adds up what a backup plan stores and reads from the numbers you type. It has not seen your backup software, your data or your disks. It does not know about compression or deduplication, whether every incremental is the same size, whether your backups are checked, or whether a restore will work, and it gives no verdict that a plan protects your data. Every number is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 500 GB of data with 5 percent incrementals, a restore at 200 MB a second, and a problem that began 10 days ago.</p>
+  <section>
+    <h2>The space truth</h2>
+    <p>Keeping 30 days of restore points with a full copy every 7 days and an incremental on the other days stores up to 6 full copies and 25 incrementals. With 500 GB of data and each incremental 5 percent of it, that is up to 3625 GB, 7.25 times the data.</p>
+  </section>
+  <section>
+    <h2>The restore truth</h2>
+    <p>In the worst case a restore needs the last full copy and 6 incrementals, which is 650 GB to read. At 200 MB a second (1 GB counted as 1000 MB) that takes 3250 seconds (54 minutes and 10 seconds), rounded up to a whole second.</p>
+  </section>
+  <section>
+    <h2>The reach truth</h2>
+    <p>Restore points reach back 30 days. A problem that began 10 days ago can be undone from points up to 20 days before it began.</p>
+  </section>
+  <a class="btn" href="app.html">Plan your backups</a>
+  <footer>Backup Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
