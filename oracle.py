@@ -48,9 +48,9 @@ def space(s, p, n, r):
     s = num(s, SERR, 1, 100000); p = num(p, PERR, 0, 100); n = num(n, NERR, 1, 60); r = num(r, RERR, 1, 400)
     tot, f, i = worst_space(s, p, n, r)
     if n == 1:
-        return f"Keeping {pl(r,'day','days')} of restore points with a full copy every day stores {pl(f,'full copy','full copies')} and no incrementals. With {s} GB of data that is {dec(tot)} GB, {f} times the data."
+        return f"Keeping {pl(r,'day','days')} of restore points with a full copy every day stores {pl(f,'full copy','full copies')} and no incrementals. With {s} GB of data that is {dec(tot)} GB, {f} {'time' if f == 1 else 'times'} the data."
     ratio = tot / s
-    return f"Keeping {pl(r,'day','days')} of restore points with a full copy every {n} days and an incremental on the other days stores up to {pl(f,'full copy','full copies')} and {pl(i,'incremental','incrementals')}. With {s} GB of data and each incremental {p} percent of it, that is up to {dec(tot)} GB, {dec(ratio)} times the data."
+    return f"Keeping {pl(r,'day','days')} of restore points with a full copy every {n} days and an incremental on the other days stores up to {pl(f,'full copy','full copies')} and {pl(i,'incremental','incrementals')}. With {s} GB of data and each incremental {p} percent of it, that is up to {dec(tot)} GB, {dec(ratio)} {'time' if ratio == 1 else 'times'} the data."
 def chain(s, p, n, m):
     s = num(s, SERR, 1, 100000); p = num(p, PERR, 0, 100); n = num(n, NERR, 1, 60)
     m = num(m, "the restore speed must be a whole number of MB a second from 1 to 100000", 1, 100000)
