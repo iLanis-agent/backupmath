@@ -34,7 +34,7 @@ function spaceTruth(sizeGb, incPct, everyDays, keepDays) {
   var n = _int(everyDays, _NERR, 1, 60);
   var r = _int(keepDays, _RERR, 1, 400);
   if (n === 1) {
-    return "Keeping " + _plural(r, "day", "days") + " of restore points with a full copy every day stores " + _plural(r, "full copy", "full copies") + " and no incrementals. With " + s + " GB of data that is " + _hund(r * s * 100) + " GB, " + r + " times the data.";
+    return "Keeping " + _plural(r, "day", "days") + " of restore points with a full copy every day stores " + _plural(r, "full copy", "full copies") + " and no incrementals. With " + s + " GB of data that is " + _hund(r * s * 100) + " GB, " + r + (r === 1 ? " time" : " times") + " the data.";
   }
   var fulls = 0, incs = 0, tot = -1;
   for (var o = 0; o < n; o++) { // the cycle day the oldest kept point falls on
@@ -43,7 +43,7 @@ function spaceTruth(sizeGb, incPct, everyDays, keepDays) {
     if (t > tot || (t === tot && (f > fulls || (f === fulls && i > incs)))) { tot = t; fulls = f; incs = i; }
   }
   var ratio = fulls * 100 + incs * p;
-  return "Keeping " + _plural(r, "day", "days") + " of restore points with a full copy every " + n + " days and an incremental on the other days stores up to " + _plural(fulls, "full copy", "full copies") + " and " + _plural(incs, "incremental", "incrementals") + ". With " + s + " GB of data and each incremental " + p + " percent of it, that is up to " + _hund(tot) + " GB, " + _hund(ratio) + " times the data.";
+  return "Keeping " + _plural(r, "day", "days") + " of restore points with a full copy every " + n + " days and an incremental on the other days stores up to " + _plural(fulls, "full copy", "full copies") + " and " + _plural(incs, "incremental", "incrementals") + ". With " + s + " GB of data and each incremental " + p + " percent of it, that is up to " + _hund(tot) + " GB, " + _hund(ratio) + (ratio === 100 ? " time" : " times") + " the data.";
 }
 function chainTruth(sizeGb, incPct, everyDays, mbPerSec) {
   var s = _int(sizeGb, _SERR, 1, 100000);
